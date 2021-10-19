@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Number Guessing Game</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
+  />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper" class="shadow-lg">
+        <div class="pb-3 bg-white text-dark">
+          <h1 class="py-2">Number Guessing Game</h1>
+          <p class="m-0">Try and guess a random number between 1 and 100.</p>
+          <p>You have 5 attempts to guess the right number.</p>
+        </div>
+        <form class="form">
+          <label2 for="guessField" id="guess">Guess a Number</label>
+            <input type="text" id="guessField" class="guessField">
+            <input type="submit" id="subt" value="Submit Guess" class="guessSubmit bg-danger">
+        </form>
+        <div class="resultParas">
+            <p >Previous Guesses: <span class="guesses"></span></p>
+            <p >Guesses Remaining: <span class="lastResult"></span></p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
